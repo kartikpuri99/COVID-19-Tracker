@@ -13,10 +13,7 @@ function Home() {
         </div>
         <div className="home__bottom">
           <a className="btn-down" href="#cards">
-            total case in the world
-          </a>
-          <a className="btn-down" href="#">
-            country wise cases
+            See The COVID-19 Cases
           </a>
         </div>
       </div>
