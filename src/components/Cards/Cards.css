@@ -1,0 +1,14 @@
+.cards__heading{
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.cards__heading-box hr{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: .5rem solid rgba(0,0,0,.1);
+  width: 50%;
+  border-radius: 2rem;
+}

@@ -1,0 +1,31 @@
+
+.card__custom{
+  border-radius: 1rem;
+}
+
+.card__custom-1{
+  background: #000000;
+  background: linear-gradient(to right, rgb(0,0,0,.8), rgb(0, 0, 0, .9)), url(../../../img/free-to-use-sounds-1xT5Yz2Am0M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__custom-2{
+  background: #000000;
+  background: linear-gradient(to right, rgb(0,0,0,.8), rgb(0, 0, 0, .9)), url(../../../img/macau-photo-agency-2AGj7bQ68lk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__custom-3{
+  background: #000000;
+  background: linear-gradient(to right, rgb(0,0,0,.8), rgb(0, 0, 0, .9)), url(../../../img/engin-akyurt-_HN4ZNgXH5w-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width:574px){
+  .card{
+    margin-left: 7%;
+  }
+}

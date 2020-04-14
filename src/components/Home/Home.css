@@ -1,0 +1,120 @@
+.home {
+  width: 100%;
+  height: 100%;
+  height: 95vh;
+  background: #000000;
+  background: linear-gradient(to right, rgb(67, 0, 0, .6), rgb(0, 0, 0, 0.9)), url(../../img/free-to-use-sounds-1xT5Yz2Am0M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home__box {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.home__heading {
+  font-size: 5rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.home__heading span {
+  color: #012ef5;
+}
+
+.home__bottom {
+  font-size: 4rem;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.btn-down,
+.btn-down:link,
+.btn-down:visited {
+  color: #f8f9fa;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-color: #f8f9fa;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  transition: all 0.2s;
+  text-transform: capitalize;
+  display: inline-block;
+  backface-visibility: hidden;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.btn-down:not(:first-child) {
+  margin-left: 4rem;
+}
+
+.btn-down:hover {
+  background-color: #f8f9fa;
+  color: black;
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.8);
+  transform: translateY(-0.5rem);
+}
+
+.btn-down:active {
+  box-shadow: 0 0.6rem 2.7rem rgba(0, 0, 0, 0.8);
+  transform: translateY(-0.2rem);
+}
+
+
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+    /*postive right negative left*/
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (max-width:537px) {
+  .btn-down:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .home__heading {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+}
