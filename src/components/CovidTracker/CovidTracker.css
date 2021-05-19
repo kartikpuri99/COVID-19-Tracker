@@ -1,12 +1,9 @@
 .home {
   width: 100%;
   height: 100%;
-  height: 95vh;
-  background: #000000;
-  background: linear-gradient(to right, rgb(67, 0, 0, .6), rgb(0, 0, 0, 0.9)), url(../../img/free-to-use-sounds-1xT5Yz2Am0M-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  height: 90vh;
+  background-color: var(--dark-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%230c0913' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .home__box {
@@ -16,7 +13,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .home__heading {
@@ -30,7 +27,7 @@
 }
 
 .home__heading span {
-  color: #012ef5;
+  color: var(--primary-color);
 }
 
 .home__bottom {
@@ -43,14 +40,14 @@
 .btn-down,
 .btn-down:link,
 .btn-down:visited {
-  color: #f8f9fa;
+  color: var(--primary-color);
   background-color: transparent;
   border: 1px solid transparent;
-  border-color: #f8f9fa;
+  border-color: var(--primary-color);
   text-decoration: none;
   padding: 1rem;
   font-size: 1.3rem;
-  border-radius: 3rem;
+  transform: skewY(-4deg);
   transition: all 0.2s;
   text-transform: capitalize;
   display: inline-block;
@@ -64,8 +61,8 @@
 }
 
 .btn-down:hover {
-  background-color: #f8f9fa;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.8);
   transform: translateY(-0.5rem);
 }
@@ -75,7 +72,10 @@
   transform: translateY(-0.2rem);
 }
 
-
+.Layer_1 {
+  fill: var(--primary-color-dark);
+  margin-top: -50px;
+}
 
 @keyframes moveInLeft {
   0% {
@@ -112,6 +112,12 @@
   .btn-down:not(:first-child) {
     margin-left: 0;
   }
+
+  .btn-down,
+.btn-down:link,
+.btn-down:visited{
+  font-size: 1rem;
+}
 
   .home__heading {
     font-size: 3.5rem;

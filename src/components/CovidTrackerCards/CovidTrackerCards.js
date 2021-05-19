@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card/Card";
 import Chart from "../Chart/Chart";
-import "./Cards.css";
+import "./CovidTrackerCards.css";
 import CountryPicker from "../CountryPicker/CountryPicker";
 
-const Cards = (props) => {
+const CovidTrackerCards = (props) => {
   const { data } = props;
   const { confirmed, recovered, deaths, lastUpdate } = data;
   if (!confirmed) {
@@ -17,15 +17,15 @@ const Cards = (props) => {
     );
   }
   return (
-    <section id="cards">
-      <div className="container mt-5 pt-5">
+    <section id="cards" style={{ paddingBottom: "4rem" }}>
+      <div className="container">
         <div className="cards__heading-box text-center mb-4 pb-4 ">
           <h1 className="cards__heading">Current COVID-19 Info</h1>
           <hr className="mb-5 "></hr>
           <CountryPicker handleCountryChange={props.handleCountryChange} />
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-12 col-sm-12 d-sm-flex  d-md-flex justify-content-center">
+          <div className="col-lg-4 col-md-12 d-flex justify-content-center">
             <Card
               heading="Infected"
               value={confirmed.value}
@@ -34,7 +34,7 @@ const Cards = (props) => {
               classes="card__custom-1"
             />
           </div>
-          <div className="col-lg-4 col-md-12 d-sm-flex  d-md-flex justify-content-center">
+          <div className="col-lg-4 col-md-12 d-flex justify-content-center">
             <Card
               heading="Recovered"
               value={recovered.value}
@@ -43,7 +43,7 @@ const Cards = (props) => {
               classes="card__custom-2"
             />
           </div>
-          <div className="col-lg-4 col-md-12 d-sm-flex d-md-flex justify-content-center">
+          <div className="col-lg-4 col-md-12  d-flex justify-content-center">
             <Card
               heading="Deaths"
               value={deaths.value}
@@ -59,4 +59,4 @@ const Cards = (props) => {
   );
 };
 
-export default Cards;
+export default CovidTrackerCards;

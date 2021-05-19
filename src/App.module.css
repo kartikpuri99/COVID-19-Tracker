@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #4717f6;
+  --primary-color-dark: #120d27;
+  --secondary-color: #a239ca;
+  --secondary-color-dark: #672481;
+  --dark-color: #0E0B16;
+  --light-color: #E7DFDD;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
 .app__main {
   box-sizing: border-box;
   /* padding: 1.4rem; */
@@ -5,5 +16,14 @@
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
+  background-color: var(--primary-color-dark);
 
 }
+
+
+
+
+
+
+
+

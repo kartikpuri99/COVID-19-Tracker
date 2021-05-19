@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Select, MenuItem, FormControl} from "@material-ui/core";
 import { fetchCountries } from "../../api/index";
 import "./CountryPicker.css";
+
+
 const CountryPicker = ({ handleCountryChange }) => {
   const [fetchedCountries, setfetchedCountries] = useState([]);
   useEffect(() => {
@@ -11,20 +12,20 @@ const CountryPicker = ({ handleCountryChange }) => {
     fetchAPI();
   }, [setfetchedCountries]);
   return (
-    <FormControl className="form__control">
+    <form className="form__control mx-auto w-100">
       
-      <Select
-        defaultValue='Global'
+      <select 
+        defaultValue='Global' className='form-control custom-select'
         onChange={(e) => handleCountryChange(e.target.value)}
       >
       
         {fetchedCountries.map((country, i) => (
-          <MenuItem key={i} value={country}>
+          <option key={i} value={country}>
             {country}
-          </MenuItem>
+          </option>
         ))}
-      </Select>
-    </FormControl>
+      </select>
+    </form>
   );
 };
 

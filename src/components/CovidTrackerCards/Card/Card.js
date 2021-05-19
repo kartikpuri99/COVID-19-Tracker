@@ -5,7 +5,7 @@ import "./Card.css";
 const Card = (props) => {
   return (
     <div
-      className={`card px-4 text-white mb-3 card__custom ${props.classes}`}
+      className={`card px-4 mb-3 card__custom ${props.classes}`}
       style={{
         maxWidth: "18rem",
       }}

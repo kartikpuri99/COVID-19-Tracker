@@ -1,0 +1,9 @@
+.table-custom{
+  background-color: var(--primary-color-dark);
+  text-align: center;
+
+}
+
+.table-custom thead th,.table-custom th{
+  border-color: var(--primary-color);
+}

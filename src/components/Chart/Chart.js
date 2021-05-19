@@ -20,7 +20,7 @@ const Chart = (props) => {
           {
             data: dailyData.map(({ confirmed }) => confirmed),
             label: "Infected",
-            borderColor: "#3333ff",
+            borderColor: "#4717f6",
             fill: false,
             pointStyle: "star",
             pointBackgroundColor: "blue",
@@ -29,8 +29,7 @@ const Chart = (props) => {
           {
             data: dailyData.map(({ deaths }) => deaths),
             label: "Deaths",
-            borderColor: "red",
-            backgroundColor: "rgba(255,0,0,0.5)",
+            borderColor: "#a239ca",
             fill: false,
             pointStyle: "star",
             pointBackgroundColor: "red",
@@ -39,10 +38,17 @@ const Chart = (props) => {
         ],
       }}
       options={{
+        maintainAspectRatio: true,
         responsive: true,
+        legend: { labels: { fontColor: "#fff" } },
         title: {
           display: true,
+          fontColor: "#fff",
           text: "CASES GRAPH",
+        },
+        scales: {
+          yAxes:[{ticks:{fontColor:"#fff"}}],
+          xAxes:[{ticks:{fontColor:"#fff"}}]
         },
       }}
     />
@@ -64,9 +70,9 @@ const Chart = (props) => {
               label: "People",
               fill: false,
               backgroundColor: [
-                "rgba(54, 162, 235, 0.2)",
-                "rgba(54, 252, 115, 0.2)",
-                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.5)",
+                "rgba(54, 252, 115, 0.5)",
+                "rgba(255, 99, 132, 0.5)",
               ],
               borderColor: [
                 "rgba(54, 162, 235)",
@@ -83,14 +89,24 @@ const Chart = (props) => {
           ],
         }}
         options={{
+          maintainAspectRatio: true,
+          responsive: true,
           legend: { display: false },
-          title: { display: true, text: `Current state in ${country}` },
+          title: {
+            fontColor: "#fff",
+            display: true,
+            text: `Current state in ${country}`,
+          },
+          scales: {
+            yAxes:[{ticks:{fontColor:"#fff"}}],
+            xAxes:[{ticks:{fontColor:"#fff"}}]
+          },
         }}
       />
     ) : null;
 
   return (
-    <div className="mt-5 pt-5 w-100">
+    <div className="mt-5 pt-5 w-100" style={{position:'relative'}}>
       {country && country !== "Global" ? barChart : lineChart}
     </div>
   );

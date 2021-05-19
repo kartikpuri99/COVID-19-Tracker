@@ -1,0 +1,47 @@
+.card__custom {
+  border-radius: 1rem;
+  color: white;
+}
+
+.card__custom-1 {
+  border-color: var(--primary-color);
+  background: var(--primary-color-dark);
+  background: linear-gradient(to right, rgb(18, 13, 39, 0.8), rgb(18, 13, 39, 0.9)), url(../../../img/free-to-use-sounds-1xT5Yz2Am0M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__custom-2 {
+  border-color: var(--primary-color);
+  background: var(--primary-color-dark);
+  background: linear-gradient(to right, rgb(18, 13, 39, 0.8), rgb(18, 13, 39, 0.9)), url(../../../img/macau-photo-agency-2AGj7bQ68lk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__custom-3 {
+  border-color: var(--primary-color);
+  background: var(--primary-color-dark);
+  background: linear-gradient(to right, rgb(18, 13, 39, 0.8), rgb(18, 13, 39, 0.9)), url(../../../img/engin-akyurt-_HN4ZNgXH5w-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.MuiInputBase-root {
+  color: var(--light-color) !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 1px solid rgba(255, 255,255, 0.42) !important;
+}
+
+.MuiSelect-icon{
+  color:var(--light-color) !important
+}
+
+/* 
+@media screen and (max-width:574px) {
+  .card {
+    margin-left: 7% !important;
+  }
+} */

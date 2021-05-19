@@ -1,0 +1,15 @@
+.search-button{
+  width: 20rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--light-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.search-button:hover{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+
+}
