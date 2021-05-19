@@ -2,6 +2,13 @@
 It is a all-in-one COVID App which provides current covid cases around the world,gives daily news related to COVID,gives the current slot availability of COVID vaccine in your area.<br/> <br/> 
 * It uses NEWSAPI for fetching the current news related to COVID-19.
 * Uses COWIN API for fetching the number of available vaccine slots in your area.
+
+
+![alt text](https://github.com/kartikpuri99/COVID-19-Tracker/blob/master/src/img/demo1.JPG "Image 1")<br/><br/>
+![alt text](https://github.com/kartikpuri99/COVID-19-Tracker/blob/master/src/img/demo2.JPG "Image 2")<br/><br/>
+![alt text](https://github.com/kartikpuri99/COVID-19-Tracker/blob/master/src/img/demo3.JPG "Image 3")<br/><br/>
+
+
 # Tech Stack
 
 * ReactJS
