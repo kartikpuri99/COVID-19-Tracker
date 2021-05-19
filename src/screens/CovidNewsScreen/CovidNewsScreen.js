@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CovidNewsCard from "../../components/CovidNewsCard/CovidNewsCard";
+import { NEWS_API } from "../../Keys";
 
 const CovidNewsScreen = () => {
-  const url = `https://newsapi.org/v2/top-headlines?q=covid&country=in&apiKey=${process.env.REACT_APP_NEWS_API}`;
+  const url = `https://newsapi.org/v2/top-headlines?q=covid&country=in&apiKey=${NEWS_API}`;
   const [errors, setError] = useState(null);
   const [news, setNews] = useState([]);
   useEffect(() => {
