@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to use the app:
+
+
+1. Run npm install in the site folder.<br />
+2. Run npm start to start the server.<br />
+
 ## Available Scripts
 
 In the project directory, you can run:
